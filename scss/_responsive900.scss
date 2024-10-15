@@ -1,0 +1,167 @@
+
+@media screen and (max-width: 900px){
+
+    body{
+        footer{
+            .copyright{
+                left: 10%;
+            }
+
+            .social-links{
+                left: 40%;
+            }
+        }
+
+        .sections{
+            height: 1000px;
+
+            .section1, .section2, .section3{
+                position: relative;
+                height: 1800px;
+                width: 100%;               
+            }
+             .section1{
+                padding-left: 30px;
+
+                .top{
+                    flex-direction: row-reverse;
+                    position: relative;
+                    left: 0;
+                    gap: 50px;    
+                }
+
+                .bottom{
+                    justify-content: flex-start;
+
+                    .presentation{
+                        flex-direction: column;
+                        gap: 100px;
+
+                        .presentation1, .presentation2, .presentation3{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 20px;
+                        }
+                    }  
+                }  
+            
+                .switch{
+                    display: none;;
+                }
+            }
+
+            .section2{
+                padding-left: 30px;
+                padding-bottom: 0;
+
+                .top{
+                    left: -1.2%;
+                }
+
+                .bottom{
+                    justify-content: flex-start;
+
+                    .adress{
+                        flex-direction: column;
+                        gap: 100px;
+
+                        .adress1, .adress2, .adress3{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 20px;
+                        }
+                    }
+                } 
+            
+                .switch2{
+                    display: none;
+                }
+            }  
+
+            .section3{
+                padding-bottom: 0;
+                main{
+                    flex-direction: column;
+                    gap: 150px;
+                    left: 5%;
+                    margin: 40px 0;
+                    
+                    iframe{
+                        width: 750px;
+                        height: 480px;
+                    }
+
+                    .contact-us{
+                        
+                        height: 580px;
+                        width: 750px;
+                    
+                        h1{
+                            margin-bottom: 50px;
+                        }
+
+                        .top{
+                            grid-template-columns: 300px 300px;
+                            grid-template-rows: 50px 50px;
+                            gap: 30px;
+                            position: relative;
+                            left: 0.5%;
+                        }
+
+                        .bottom{
+                            top: 0;
+                        }
+                    }
+                }
+            }
+
+            .switch3{
+                display: none;
+            }   
+
+            details{
+                width: 650px;
+                margin: 20px 0;
+                padding: 5px;
+            }
+
+            textarea{
+                max-width: 650px;
+                height: 250px;
+            }
+
+            input{
+                height: 40px;
+            }
+
+            .section4{
+                height: 3000px;
+
+                h1{
+                    margin: 0 0 50px -400px;
+                }
+
+                .top{
+                    display: grid;
+                    grid-template-columns: 300px 500px;
+                    grid-template-rows: 950px 950px ;
+                    margin-left: 350px;
+                    gap: 150px;
+                }
+
+                .bottom{
+                    flex-direction: column;
+                    margin-left: 50px;
+
+                    .drinks-container{
+                        .beer-container, .cocktails-container, .soft-container{
+                            margin-right: -180px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

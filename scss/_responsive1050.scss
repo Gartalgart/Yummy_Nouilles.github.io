@@ -1,0 +1,77 @@
+@media  screen and (max-width: 1050px){
+     body{
+        .sections{
+            .section1, .section2, .section3{
+                width: 100%;               
+            }
+
+            .section1{
+                .top{
+                    left: -12%;
+                }
+                .bottom{
+                    .presentation{
+                        gap: 80px;
+                    }
+                }
+            }
+
+            .section2{
+                .bottom{
+                    .adress{
+                        gap: 80px;
+                    }
+                }
+            }
+
+            .section3{
+                main{
+                    gap: 60px;
+                    left: -3%;
+                }
+                .switch3{
+                    margin-left: 80px;
+                }
+
+                .contact-us{
+                    width: 500px;
+                }
+
+                details{
+                    width: 450px;
+                }
+
+                textarea{
+                    max-width: 450px;
+                }
+            }
+
+            .section4{
+                height: 3000px;
+
+                h1{
+                    margin: 50px 0 50px -400px;
+                }
+
+                .top{
+                    display: grid;
+                    grid-template-columns: 500px 500px;
+                    grid-template-rows: 950px 950px ;
+                    margin-left: 350px;
+                    gap: 150px;
+                }
+
+                .bottom{
+                    flex-direction: column;
+                    margin-left: 50px;
+
+                    .drinks-container{
+                        .beer-container, .cocktails-container, .soft-container{
+                            margin-right: -120px;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}

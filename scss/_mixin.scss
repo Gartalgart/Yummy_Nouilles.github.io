@@ -1,0 +1,45 @@
+@mixin horizontal{
+    object-fit: cover;
+    width: 40px;
+    height: 12px;
+    color: $green1;
+    position: relative;
+    left: 13%;
+    box-shadow: none;
+
+    @keyframes arrow-move-X {
+        0%{
+            transform: translateX(0) scale(0.5);
+        }
+        50%{
+            transform: translateX(30%) scale(1);
+        }
+        100%{
+            transform: translateX(0) scale(0.5);
+        }
+    }
+}
+
+@mixin vertical{
+    object-fit: cover;
+    width: 70px;
+    height: 25px;
+    color: $green1;
+    position: absolute;
+    bottom: 13%;
+    box-shadow: none;
+    transform: rotate(90deg);
+    transform-origin: center;
+
+    @keyframes arrow-move-Y {
+        0%{
+            transform: rotate(90deg)  scale(0.5);
+        }
+        50%{
+            transform: rotate(90deg)  scale(1);
+        }
+        100%{
+            transform: rotate(90deg)  scale(0.5);
+        }
+    }
+}

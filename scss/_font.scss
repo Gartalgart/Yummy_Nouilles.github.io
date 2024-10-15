@@ -1,0 +1,108 @@
+$background-body: #FFF3E1;
+$background-nav: #C1C1C1;
+$footer: #000000;
+$green1: #A3B18A;
+$green2: #588157;
+$green3: #3A5A40;
+$green4: #344E41;
+
+
+h1, .navlink{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: $green4;
+}
+
+h1{
+    font-size: 64px;
+}
+
+.navlink{
+    font-size: 32px;
+
+    &:hover{
+        font-weight: 600;
+    }
+}
+
+h5, p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h5, .copyright{
+    color: $green1;
+}
+
+p{
+    color: $green3;
+}
+
+.social-link img{
+    width: 50px;
+    height: 50px;
+    box-shadow: none;
+}
+
+.logo img{
+    border-radius: 100%;
+    width: 260px;
+    height: 260px;
+}
+
+.img-presentation{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+    
+
+    &:hover{
+        width: 400px;  
+    }
+}
+
+h2{
+    color: $green3;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+h3{
+    color: $green4;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    width: 230px;
+    border-bottom: 1px solid black;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+h4{
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    position: relative;
+    left: 240px;
+    bottom: 15px;
+}
+
+h6{
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    width: 230px;
+    text-align: left;
+    padding-bottom: 3px;
+}
