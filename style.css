@@ -532,6 +532,41 @@ h6 {
     margin-right: -100px;
   }
 }
+@media screen and (max-width: 415px) {
+  body h1 {
+    font-size: 52px;
+  }
+  body .sections .section3 main iframe {
+    width: 350px;
+  }
+  body .sections .section3 main .contact-us {
+    width: 350px;
+  }
+  body .sections .section3 main .contact-us .top input {
+    width: 325px;
+  }
+  body .sections .section3 main .contact-us .bottom details {
+    width: 325px;
+  }
+  body .sections .section3 main .contact-us .bottom textarea {
+    width: 325px;
+  }
+  body .sections .section4 h1 {
+    justify-content: flex-start;
+    padding-left: 100px;
+  }
+  body .sections .section4 .bottom h2 {
+    width: 270px;
+  }
+  body .sections .section4 .bottom .drinks {
+    padding-bottom: 20px;
+  }
+  body .sections .section4 .bottom .drinks .drinks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 @media screen and (max-width: 1600px) {
   body footer .social-links {
     position: relative;
