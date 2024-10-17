@@ -4,8 +4,14 @@
             font-size: 52px;                  
         }
         .sections{
+            .section1{
+                .top{
+                    margin-right: 20px;
+                }
+            }
             .section3{
                 main{
+                    margin-right: 20px;
                     iframe{
                         width: 350px;
                     }
@@ -34,22 +40,43 @@
             }
 
             .section4{
+                max-width: 415px;
                 h1{
                     justify-content: flex-start;
                     padding-left: 100px;
                 }
 
+                .top{
+                    h4{
+                        margin-right: 200px;
+                    }                    
+                }
+            
                 .bottom{
                     h2{
                         width: 270px;
                     }
+
+                    .desserts{
+                        h4{
+                            margin-right: 20px;
+                            margin-left: 100px;
+                        }
+                    }
+
                     .drinks{
                         padding-bottom: 20px;
                         .drinks-container{
                             display: flex;
                             flex-direction: column;
                             gap: 20px;
+
+                            .beer-container, .cocktails-container, .soft-container{
+                                margin-right: 0;
+                            }
                         }
+
+                        
                     }
                 }
             }

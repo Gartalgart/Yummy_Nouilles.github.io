@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1, .navlink {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
@@ -320,6 +321,9 @@ h6 {
   }
 }
 @media screen and (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
   body header {
     background-color: black;
     justify-content: flex-end;
@@ -375,6 +379,9 @@ h6 {
   body footer .social-links {
     left: 25%;
   }
+  body .sections {
+    padding-bottom: 0;
+  }
   body .sections .section1 {
     padding-top: 80px;
   }
@@ -427,6 +434,10 @@ h6 {
   body .sections .section3 {
     padding-top: 80px;
   }
+  body .sections .section3 main iframe, body .sections .section3 main img, body .sections .section3 main input, body .sections .section3 main textarea, body .sections .section3 main .contact-us, body .sections .section3 main details {
+    width: 100%;
+    max-width: 100%; /* S'assure que rien ne dépasse la largeur de l'écran */
+  }
   body .sections .section3 main iframe {
     width: 525px;
   }
@@ -452,7 +463,7 @@ h6 {
     padding-right: 50px;
   }
   body .sections .section4 {
-    height: 4250px;
+    height: 4525px;
   }
   body .sections .section4 h1 {
     margin: 20px 0 50px 0;
@@ -461,8 +472,7 @@ h6 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 180px;
-    margin-top: 1px;
+    margin: 1px 0 180px 130px;
   }
   body .sections .section4 .top .container-ramen, body .sections .section4 .top .container-hot, body .sections .section4 .top .container-cold {
     align-items: center;
@@ -536,6 +546,12 @@ h6 {
   body h1 {
     font-size: 52px;
   }
+  body .sections .section1 .top {
+    margin-right: 20px;
+  }
+  body .sections .section3 main {
+    margin-right: 20px;
+  }
   body .sections .section3 main iframe {
     width: 350px;
   }
@@ -551,12 +567,22 @@ h6 {
   body .sections .section3 main .contact-us .bottom textarea {
     width: 325px;
   }
+  body .sections .section4 {
+    max-width: 415px;
+  }
   body .sections .section4 h1 {
     justify-content: flex-start;
     padding-left: 100px;
   }
+  body .sections .section4 .top h4 {
+    margin-right: 200px;
+  }
   body .sections .section4 .bottom h2 {
     width: 270px;
+  }
+  body .sections .section4 .bottom .desserts h4 {
+    margin-right: 20px;
+    margin-left: 100px;
   }
   body .sections .section4 .bottom .drinks {
     padding-bottom: 20px;
@@ -565,6 +591,9 @@ h6 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+  body .sections .section4 .bottom .drinks .drinks-container .beer-container, body .sections .section4 .bottom .drinks .drinks-container .cocktails-container, body .sections .section4 .bottom .drinks .drinks-container .soft-container {
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 1600px) {
