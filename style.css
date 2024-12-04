@@ -463,7 +463,7 @@ h6 {
     padding-right: 50px;
   }
   body .sections .section4 {
-    height: 4525px;
+    height: 4625px;
   }
   body .sections .section4 h1 {
     margin: 20px 0 50px 0;
@@ -549,6 +549,15 @@ h6 {
   body .sections .section1 .top {
     margin-right: 20px;
   }
+  body .sections .section1 .bottom {
+    margin-right: 30px;
+  }
+  body .sections .section2 .top p {
+    margin-right: 15px;
+  }
+  body .sections .section2 .bottom {
+    margin-right: 30px;
+  }
   body .sections .section3 main {
     margin-right: 20px;
   }
@@ -558,8 +567,17 @@ h6 {
   body .sections .section3 main .contact-us {
     width: 350px;
   }
+  body .sections .section3 main .contact-us h1 {
+    margin: 50px 0 0 0;
+  }
+  body .sections .section3 main .contact-us .top {
+    margin-top: 70px;
+  }
   body .sections .section3 main .contact-us .top input {
     width: 325px;
+  }
+  body .sections .section3 main .contact-us .bottom {
+    margin-bottom: 200px;
   }
   body .sections .section3 main .contact-us .bottom details {
     width: 325px;
@@ -857,9 +875,19 @@ header .navlinksBurger {
   justify-content: center;
   gap: 250px;
 }
-.bottom .presentation p {
+.bottom .presentation .presentation1, .bottom .presentation .presentation2, .bottom .presentation .presentation3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottom .presentation .presentation1 .text-presentation, .bottom .presentation .presentation2 .text-presentation, .bottom .presentation .presentation3 .text-presentation {
+  margin-top: 10px;
   max-width: 300px;
   text-align: center;
+  transition: all 0.5 ease-in-out;
+}
+.bottom .presentation .presentation1 .text-presentation .img-presentation:hover + .text-presentation, .bottom .presentation .presentation2 .text-presentation .img-presentation:hover + .text-presentation, .bottom .presentation .presentation3 .text-presentation .img-presentation:hover + .text-presentation {
+  transform: translateX(75px);
 }
 
 .switch {
@@ -890,6 +918,9 @@ header .navlinksBurger {
 }
 .switch:hover .vertical {
   animation: arrow-move-Y 1s infinite;
+}
+.switch h1 {
+  margin: -15px 0 20px 0;
 }
 
 /*---------------------------*/
@@ -1030,7 +1061,7 @@ header .navlinksBurger {
   transform: rotate(90deg);
   transform-origin: center;
   position: relative;
-  bottom: 15px;
+  bottom: 55px;
 }
 @keyframes arrow-move-Y {
   0% {

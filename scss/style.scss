@@ -136,9 +136,21 @@ header{
         justify-content: center;
         gap: 250px;
 
-        p{
-            max-width: 300px;
-            text-align: center;
+        .presentation1, .presentation2, .presentation3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .text-presentation{
+                margin-top: 10px;
+                max-width: 300px;
+                text-align: center;
+                transition: all 0.5 ease-in-out;
+
+                .img-presentation:hover + .text-presentation {
+                    transform: translateX(75px);
+                }
+            }
         }
     }
 }
@@ -146,7 +158,6 @@ header{
 .switch{
     display: flex;
     justify-content: center; 
-
     .vertical{
         @include vertical;
     }
@@ -155,6 +166,10 @@ header{
         .vertical{
             animation: arrow-move-Y 1s infinite;
         }          
+    }
+
+    h1{
+        margin: -15px 0 20px 0;
     }
 }
 /*---------------------------*/
@@ -288,7 +303,7 @@ header{
     .vertical3{
         @include vertical;
         position: relative;
-        bottom: 15px;
+        bottom: 55px;
     }
 
     .switch-menu{

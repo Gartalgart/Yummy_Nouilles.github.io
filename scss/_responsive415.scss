@@ -8,6 +8,22 @@
                 .top{
                     margin-right: 20px;
                 }
+
+                .bottom{
+                    margin-right: 30px;
+                }
+            }
+
+            .section2{
+                .top{
+                    p{
+                        margin-right: 15px;
+                    }
+                }
+
+                .bottom{
+                    margin-right: 30px;
+                }
             }
             .section3{
                 main{
@@ -19,14 +35,18 @@
                     .contact-us{
                         width: 350px;
 
+                        h1{
+                            margin: 50px 0 0 0;
+                        }
                         .top{
+                            margin-top: 70px;
                             input{
                                 width: 325px;
                             }
                         }
 
                         .bottom{
-
+                            margin-bottom: 200px;
                             details{
                                 width: 325px;
                             }
